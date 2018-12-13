@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dev's Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.github.com/kalradev">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/cryptoheader.jpeg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Cryptography</h1>
+              <h2 class="subheading">What is it?</h2>
+              <span class="meta">Posted by
+                <a href="#">Dev Kalra</a>
+                on December 12, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>You are using cryptography everyday even if you don't know when and where, but it is everywhere. At its core cryptography is a mean to establish secure communication between the two entities say Alice and Bob (names used here is a convention). We will use these name further in the technical details </p>
+            <p>Now lets get into some technical details</p>
+           	<p>In order to establish a secure communication between Alice and Bob it follows basically to protocol.<br>
+           		<ul>
+           			<li>Secure key establishment</li>
+           			<li>Secure communication</li>
+           		</ul>
+            <h3>Secure key establishment</h3>
+            <p>During this protocol first the identity of both Alice and Bob is verified so that both of them are assured that the other entity is not an attacker. After identifying, a secret key, the one used in symmetric encryption, is shared among alice and bob so that secure communication can take place. <br> Note that, the attacker doesn't know about the secret key, as the key is shared after encrypting with a asymmetric cipher.   </p>
+            <a href="#">
+              <img class="img-fluid" src="img/crypto.jpeg" alt="">
+            </a><br><br>
+            <h3>Secure communication</h3>
+            <p>Lets talk about what happen during communication. During communication the messages are encrypted and decrypted with using a symmetric cipher, the key of which is shared to them during the previous protocol, there are other things too. There are some encryption schemes which helps to ensure secure communication along with confidentiality and inntegrity. </p>
+
+            <h3>Doubt..!</h3>
+            <p>You may have a doubt that why even use symmetric cipher. As we are using asymmetric cipher for key exchange it must be very secure than why not to use it for communication. The thing is you can, but using asymmetric cipher is time consuming and is infeasible for large messages.</p>
+            <p>There are other things that comes under cryptography like digital signatures and anonymous communication. We will not go into that, but to give an overview. Digital signatures are analogous to signature in physical world, but they do differ in a way that different digital signatures exists for a single entitiy. And anonymous communication means that Alice and Bob don't know a single thing about each other yet they are communicating for some purpose.</p>	
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/dev.kalra.923">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.github.com/kalradev">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
